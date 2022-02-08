@@ -1,9 +1,25 @@
 
-![Alt](/home/whitewalker/Pictures/tyler/home.png?raw=true)
+## Usage
+
+![alt text](https://i.ibb.co/xJLFY9P/todo.png)
+
+```bash
+
+Select the api row you want to call
+Collapse the row on the far right with the drop down icon
+Click the  the button "Try it Now"
+Modify your parameters by id(primary key), firstName, lastName or todo title.
+
+If status code '200' or '201' is returned, the call was successful. 
+
+```
+
+
 
 ## Description
 
 NodeJS application that manages a database of users and a todo list for each user . The application uses NestJS Framework RESTful API, MySQL and Swagger documentation
+
 
 ## Installation
 
@@ -47,6 +63,7 @@ If your docker is successfully installed, you can use docker cli.
 And then, you can connect mysql in http://localhost:3306, username 'root' and password is 'root'.
 
 
+
 ## Start with docker
 
 Build the image using docker cli
@@ -59,7 +76,7 @@ Build the image using docker cli
 And then you can create and run docker container using builded image.
 
 ```bash
-  docker run -d -p 3000:3000 nest-sample
+  docker run -d -p 3000:3000 user-todo-api
   docker ps # list up running container
 ```
 
