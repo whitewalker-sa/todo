@@ -69,7 +69,7 @@ And then, you can connect mysql in http://localhost:3306, username 'root' and pa
 Build the image using docker cli
 
 ```bash
-  docker build -t user-todo-api
+  docker build -t user-todo-api .
   docker images # list up docker images
 ```
 

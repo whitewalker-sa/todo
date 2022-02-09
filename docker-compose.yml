@@ -1,22 +1,24 @@
-version: "3.8"
-
+version: '3.8'
 services:
-  nest:
-    build: .
-    restart: always
-    ports:
-      - 3000:3000
-    env_file:
-      - .env
-    links:
-      - database
-
-  database:
+  mysqldb:
     image: mysql:5.7
     restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
     ports:
-      - 3306:3306
-    env_file:
-      - .env
-    volumes:
-      - ~/database/nest:/var/lib/mysql
+      - 3036:3036
+    networks:
+      - new
+  nest:
+    image: app/
+    depends_on:
+      - mysqldb
+    ports:
+      - 3000:3000
+    networks:
+      - new
+networks:
+  new:
