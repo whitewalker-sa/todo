@@ -9,7 +9,7 @@ Select the api row you want to call
 Collapse the row on the far right with the drop down icon
 Click the  the button "Try it Now"
 Modify your parameters by id(primary key), firstName, lastName or todo title.
-
+Press the button Execute
 If status code '200' or '201' is returned, the call was successful. 
 
 ```
