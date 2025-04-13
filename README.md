@@ -119,7 +119,7 @@ Login 'root' password 'root' database_name 'test'
 ## Stay in touch
 
 - Author - [Mpho Louis](https://kamilmysliwiec.com)
-- Twitter - [@whitewalker_01](https://twitter.com/whitewalker_01)
+- Twitter - [@whitewalker_01](https://twitter.com/barayiti)
 - Linkedin  [Linkedin](https://linkedin.com/in/mpho-louis)
 
 ## License
